@@ -8,12 +8,25 @@
 
     /* Colors */
     --color-white: white !important;
+    --background: #fffaff !important;
+    --text-1: #515151 !important;
+    --text-2: #b1b1b1 !important;
+    --elements: #050401 !important;
 }
 
 *{
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box !important;
+}
+
+p, h1, a{
+    font-family: var(--ubuntu);
+}
+
+
+.bg-color{
+    background-color: var(--background);
 }
 
 .nav-header{
@@ -33,6 +46,10 @@
     font-family: var(--ubuntu);
 }
 
+.links ul li a:hover{
+    color: var(--color-white);
+}
+
 .toggle-button{
     border: 0px var(--color-white) solid !important;
     background-color: var(--color-white);
@@ -46,14 +63,93 @@
     box-shadow: 0 0 0 var(--color-white) !important;
 }
 
+.profile-pic{
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.buttons{
+    
+    margin: 3.5rem 0 2rem 0 !important;
+}
+
+.button{
+    margin: 0 .5rem !important;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: .5rem 1.5rem !important;
+    border-radius: 50px;
+}
+
+.button-1{
+    color: var(--elements);
+    font-weight: lighter;
+}
+
+.button-2{
+    background-color: var(--elements);
+    color: var(--color-white);
+    font-weight: lighter;
+}
+
+.button-1:hover{
+    color: var(--elements);
+}
+
+.button-2:hover{
+    color: var(--color-white);
+}
+
+/* .socials{
+    margin: 0 .5rem !important;
+} */
+
+.icon{
+    color: var(--elements);
+}
+
+.icon-link{
+    margin: 0 .8rem !important;
+}
+
+
 @media (min-width: 992px){
     .navbar-none-1{
         display: none !important;
+    }
+
+    .cont-header{
+        margin-top: 10rem !important;
     }
 }
 
 @media (max-width: 992px){
     .navbar-none-2{
         display: none !important;
+    }
+
+    .profile-pic{
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        border-radius: 50% !important;
+    }
+
+    .cont-header{
+        margin-top: 7rem !important;
+    }
+
+    .img-profile{
+        margin-bottom: 2rem !important;
+    }
+}
+
+@media (max-height: 736px){
+
+    .cont-header{
+        margin-top: 1rem !important;
     }
 }
