@@ -21,7 +21,7 @@
 }
 
 p, h1, a{
-    font-family: var(--ubuntu);
+    font-family: var(--ubuntu) !important;
 }
 
 
@@ -115,6 +115,52 @@ p, h1, a{
     margin: 0 .8rem !important;
 }
 
+.title{
+    margin: 15rem 0 5rem 10rem !important;
+    position: relative;
+}
+
+.p-about{
+    margin-right: .5rem !important;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.raya{
+    width: 547px;
+    height: 3.5px;
+    background-color: var(--elements);
+    position: absolute;
+    top: 2rem;
+    left: 9.5rem;
+}
+
+.raya-2{
+    width: 566px;
+    height: 3.5px;
+    background-color: var(--elements);
+    position: absolute;
+    top: 2rem;
+    left: 8.4rem;
+}
+
+.raya-3{
+    width: 610px;
+    height: 3.5px;
+    background-color: var(--elements);
+    position: absolute;
+    top: 2rem;
+    left: 5.6rem;
+}
+
+.raya-4{
+    width: 515px;
+    height: 3.5px;
+    background-color: var(--elements);
+    position: absolute;
+    top: 2rem;
+    left: 11.5rem;
+}
 
 @media (min-width: 992px){
     .navbar-none-1{
